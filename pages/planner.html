@@ -120,25 +120,32 @@
 		<div class="container">
 			<div class="row">
 
-				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-					<a href="location.html" class="btn btn-primary btn-block py-3">Location &nbsp; <i
-							class="fa fa-map-marker" aria-hidden="true"></i></a>
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0 centerXY">
+					<div class="custom-input-container">
+						<input type="text" class="custom-input" placeholder="&nbsp; Location"
+							disabled>
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+					</div>
 				</div>
 
-				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0 centerXY">
 					<div class="custom-input-container" onclick="departureDateToggle()">
-						<input type="text" id="departure_date" class="custom-input" placeholder="Departure Date" disabled>
+						<input type="text" id="departure_date" class="custom-input" placeholder="&nbsp; Departure Date"
+							disabled>
 						<i class="fa fa-calendar" aria-hidden="true"></i>
 					</div>
 					<div class="calendar" style="display: none;"></div>
 				</div>
 
-				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0 centerXY">
 					<div class="custom-input-container" onclick="arrivalDateToggle()">
-						<input type="text" id="arrival_date" class="custom-input" placeholder="Arrival Date" disabled>
+						<input type="text" id="arrival_date" class="custom-input" placeholder="&nbsp; Arrival Date" disabled>
 						<i class="fa fa-calendar" aria-hidden="true"></i>
 					</div>
 					<div class="calendar2" style="display: none;"></div>
+				</div>
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0"">
+					<button class=" btn btn-primary searchBtn centerXY">Search</button>
 				</div>
 			</div>
 		</div>
@@ -239,7 +246,7 @@
 	<script src="../js/glightbox.min.js"></script>
 	<script src="../js/custom.js"></script>
 	<script src="../js/plannerCalendar.js"></script>
-	
+
 </body>
 
 

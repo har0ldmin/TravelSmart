@@ -15398,13 +15398,17 @@ textarea {
   padding-right: 30px;
 }
 
-.fa-calendar {
+.fa-calendar,
+.fa-map-marker{
   position: absolute;
   right: 10px; 
   top: 50%;
   transform: translateY(-50%);
 }
 
+input[class="custom-input"] {
+  border-radius: 10px;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
@@ -15726,6 +15730,7 @@ pointer-events: none;
   padding: 6px 15px;
 }
 
+/* Close button on calendar modal */
 .calendar-close-button:hover {
   background-color: #f17945;
   color: #fff;
@@ -15736,4 +15741,24 @@ pointer-events: none;
 .calendar-bottom-line {
   margin-top: 1.5rem;
   border: 1px solid #ccc;
+}
+
+/* Search Button style */
+.searchBtn {
+  background-color: white;
+  color: black;
+  float: right;
+  height: 3.5vh;
+}
+
+.searchBtn:hover {
+  background-color: rgb(238, 238, 238);
+  color:black;
+  text-decoration: none;
+}
+
+.centerXY {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
